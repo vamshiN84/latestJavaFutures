@@ -1,6 +1,9 @@
 package com.java.latest;
 
-public class Calculator implements IntegerMath{
+public class Calculator {
+	public interface  IntegerMath{
+		public int operation(inta ,int b);
+	}
 	  
     public int operateBinary(int a, int b, IntegerMath op) {
         return op.operation(a, b);
